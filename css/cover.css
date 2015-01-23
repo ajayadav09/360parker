@@ -1,0 +1,430 @@
+
+
+
+@font-face {
+font-family: dinpro;
+src: url('../fonts/DINPro-Medium.otf');
+src: url('../fonts/DINPro-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINPro-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/DINPro-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINPro-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+font-family: dinprostd;
+src: url('../fonts/DINEngschriftStd.otf');
+src: url('../fonts/DINEngschriftStd.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINEngschriftStd.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/DINEngschriftStd.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINEngschriftStd.svg') format('svg'); /* Legacy iOS */
+
+}
+
+@font-face {
+font-family: dinprolt;
+src: url('../fonts/DINPro-Light.otf');
+src: url('../fonts/DINPro-Light.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINPro-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/DINPro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINPro-Light.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+font-family: neutradisplay;
+src: url('../fonts/NeutraDisp Titling.otf');
+src: url('../fonts/NeutraDisp Titling.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NeutraDisp Titling.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NeutraDisp Titling.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NeutraDisp Titling.svg') format('svg'); /* Legacy iOS */
+}
+
+
+
+
+@font-face {
+font-family: dinotblack;
+src: url('../fonts/DINOT-Black.otf');
+src: url('../fonts/DINOT-Black.woff') format('woff'), /* Modern Browsers */
+	   url('../fonts/DINOT-Black.woff2') format('woff2'),
+       url('../fonts/DINPro-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINPro-Black.svg') format('svg'), /* Legacy iOS */
+	   url('../fonts/DINPro-Black.eot') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+
+@font-face {
+font-family: dinotreg;
+src: url('../fonts/DINOT-Regular.otf');
+src: url('../fonts/DINOT-Regular.woff') format('woff'), /* Modern Browsers */
+	   url('../fonts/DINOT-Regular.woff2') format('woff2'),
+       url('../fonts/DINPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINPro-Regular.svg') format('svg'), /* Legacy iOS */
+	   url('../fonts/DINPro-Regular.eot') format('embedded-opentype'); /* IE6-IE8 */
+}
+
+@font-face {
+font-family: dinpromedium;
+src: url('../fonts/DINPro-Medium.otf');
+src: url('../fonts/DINPro-Medium.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DINPro-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/DINPro-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/DINPro-Medium.svg') format('svg'); /* Legacy iOS */
+}
+
+.conatiner{padding:30px;}
+
+/* ====================================================================================== Fixed Header ============================================================================= */
+header {
+  height: 115px;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.7);
+  -moz-box-shadow:  0 1px 5px 0 rgba(0, 0, 0, 0.7);
+   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.7); 
+   min-width:750px;
+z-index: 8;
+}
+#yellowband{
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	height: 15px;
+	background: #ffb91d;
+	z-index: 4;
+}
+
+.cd-logo{
+	position: fixed;
+	top: 28px;
+	margin-left:7%;
+	left: 0;
+}
+
+.yellowblock{
+background:#ffb91d;
+-webkit-transform: skewX(135deg);
+-moz-transform: skewX(135deg);
+-o-transform: skewX(135deg);
+-ms-transform: skewX(135deg);
+transform: skewX(135deg);
+} 
+
+.cd-primary-nav-trigger .cd-menu-icon {
+  /* this span is the central line of the menu icon */
+  display: inline-block;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 30px;
+  height: 6px;
+  background-color: #58585B;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+ /* these are the upper and lower lines in the menu icon */
+}
+
+.cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #58585B;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+  transition: transform .3s, top .3s, background-color 0s;
+ }
+.cd-primary-nav-trigger .cd-menu-icon::before {
+  top: -10px;
+ }
+.cd-primary-nav-trigger .cd-menu-icon::after {
+  top: 10px;
+ }
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked {
+  background-color: rgba(255, 255, 255, 0);
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  background-color: #58585B;
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+ 
+}
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+ 
+}
+
+.cd-primary-nav-trigger{
+position:absolute;
+ left:84%; 
+ top:40px;
+}
+
+.cd-primary-nav-trigger:hover{
+text-decoration:none;
+}
+
+/* */
+
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  left: 0;
+  top: 115px;
+  height: 100%;
+  width: 100%;
+  background:#2C2D2D;
+ opacity:0.95;
+ z-index: 10; 
+  text-align: center;
+  padding: 0 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow:hidden;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-140%);
+  -moz-transform: translateY(-140%);
+  -ms-transform: translateY(-140%);
+  -o-transform: translateY(-140%);
+  transform: translateY(-140%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.cd-primary-nav.is-visible {
+	z-index: 999;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  }
+
+.cd-menu-text{
+text-decoration: none;
+color: #58585B;
+font-family: neutradisplay;
+font-size: 20px;
+padding-right: 25px;
+vertical-align:top;
+}
+
+/* =========================================================================================================== Fixed header ends =========================================================================== */
+
+.overlaymenu{
+position:absolute;
+width:20%;
+font-family: neutradisplay;
+font-size: 24px;
+color:white;
+}
+.overlaymenu nav ul { 
+list-style:none;
+white-space: nowrap; 
+padding-left: 0px;
+padding-right: 0px;
+}
+.overlaymenu nav ul  li{ 
+list-style:none;
+vertical-align:middle;
+white-space: nowrap;
+}
+
+#menuimage{
+z-index: 9999;
+width: 750px;
+height: 535px; 
+max-width:100%;
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-375px;
+}
+
+#truckmenu nav ul  li{ 
+list-style:none;
+text-align: left;
+height: 50px;
+width:205px;
+margin-top: 10px;
+vertical-align: middle;
+padding-top:10px; 
+}
+
+#truckmenu nav ul a{ 
+text-decoration:none;
+color:white;
+}
+#truckmenu nav ul li:hover{
+color:#58595B;
+background-image: url("../img/menu_hover.png");
+ background-repeat:no-repeat;
+ background-size:205px 50px; 
+ background-position:0px 0px;
+ }
+#rigmenu nav ul  li{ 
+list-style: none;
+height: 50px;
+padding-top: 10px;
+margin-bottom: 1px;
+text-align: left;
+margin-right: 0%;
+white-space: nowrap;
+width: 205px;
+padding-left: 45px;
+}
+
+#rigmenu nav ul  li:hover{
+color:#58595B;
+background-image: url("../img/menu_hover_rig.png");
+ background-repeat:no-repeat;
+}
+
+#truckmenu{
+left:0px;
+}
+#rigmenu{
+right:-40px;
+}
+
+#yellowblockmenu{
+position:absolute;
+top:0px;
+left:35%;
+margin-left:-111px;
+height:1100px;
+width:222px;
+z-index:-10;
+background:#ffb91d;
+}
+
+.navbars{
+position:absolute;
+top:40px;
+}
+.selected{
+ color:#58595B;
+ background-image: url("../img/menu_hover.png");
+ background-repeat:no-repeat;
+ background-size:cover;
+ background-position:-92px 0px;
+ width:205px;
+ height:50px;
+}
+.popovercontent p {
+font-family:dinprolt;
+font-size : 14px;
+line-height:17px;
+width:250px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+@media all and (max-width: 1500px) {
+	.cd-primary-nav {
+		overflow-Y:hidden;
+		overflow-X:hidden;
+	}
+
+	#truckmenu nav ul img{margin-left:-16%; }
+	
+	#menuimage{
+		 width: 500px;
+		height: 357px; 
+		margin-left:-300px;
+		margin-top:122px;
+	}
+
+
+	#truckmenu nav ul  li{ margin-top: 1px;} 
+
+	#yellowblockmenu{
+	left:23%;
+	height:1051px;
+	width:222px;
+	}
+}
+
+/* ==================================================== 1500px media queries ends ========================================================================================== */
+@media all and (max-width: 1300px) {
+
+	#rigmenu{
+		right:30px;
+	}
+
+}
+
+
+@media all and (max-width: 1100px) {
+	.cd-menu-text{margin-right:5px;}
+
+	.cd-primary-nav {
+		overflow-Y:scroll;
+		overflow-X:scroll;
+	}
+	#yellowblockmenu{
+		left: 37.18%;
+		top: 0px;
+		height: 951px;
+		width: 167px;
+		z-index: -10;
+		-webkit-transform: skewX(141deg);
+		-moz-transform: skewX(141deg);
+		-ms-transform: skewX(141deg);
+		-o-transform: skewX(141deg);
+		transform: skewX(141deg);
+	}
+	#menuimage{
+		 width: 350px;
+		height: 250px; 
+		margin-left: -160px;
+		margin-top: 177px;
+	}
+
+	.cd-primary-nav-trigger{left:80%; }
+
+}
+
+@media all and (max-width: 600px) {
+
+	#yellowblockmenu{
+		left:9.35%;
+		top:0px;
+		height:951px;
+		width:222px;
+		z-index:-10;
+	}
+	#menuimage{
+		width: 204px;
+		height: 100px; 
+		margin-left: -82px;
+		margin-top: 231px;
+	}
+	.menuimage{max-width:100%;}
+	.cd-primary-nav-trigger{left:70%; }
+}

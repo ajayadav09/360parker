@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+ <html>
+<head>
+	
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />	
+<script src ="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+ <script src="js/modernizr.js"></script>
+ <script src ="js/centralmenu.js"></script> 
+
+ 
+ <!-- Modernizr -->
+<link rel="stylesheet" type="text/css" href="css/cover.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/preselectnew.css"> 
+
+	 
+</head>
+	
+<body>
+<header>
+<div class="container">
+      <div class="cd-logo"><a href="index.html"><img src="img/logo.png" alt="Parker"></a></div>   
+               
+		<nav></nav> <!-- cd-nav -->
+		
+		<a class="cd-primary-nav-trigger" href="#0">
+			<span class="cd-menu-text">MENU</span> <span class="cd-menu-icon"></span>
+		</a> <!-- cd-primary-nav-trigger -->
+	
+</div>
+<div id="yellowband"> </div>
+</header>
+<div class="cd-primary-nav container-fluid" >
+<div  id="inneroverlay" class="row">
+    <div class="overlaymenu col-md-2 col-sm-2 col-xs-2" id="truckmenu">
+	<nav class="navbars">
+	 <ul>
+<a href="onscroll.html"> <img  src="img/Homepage_Trucks_Text.png" width="195" height="55px"/> </a>
+		<a href="cementer.html">        <li>CEMENTER </li>       </a>
+		<a href="blender.html">         <li>BLENDER </li>        </a> 
+		<a href="coiledtubing.html" >   <li>COILED TUBING </li>  </a>
+		<a href="fracmanifold.html">    <li>FRAC MANIFOLD</li>   </a>
+		<a href="frac.html">            <li>FRAC</li>            </a>
+		<a href="hydrationtruck.html">  <li>HYDRATION</li>       </a> 
+		<a href="sandertruck.html">     <li>SANDER</li>          </a>
+		<a href="workoverrig.html">     <li>WORKOVER RIG</li>    </a> 
+     </ul>
+	</nav>
+</div>
+
+<div class="col-md-8 col-sm-8 col-xs-8 menuimage">
+
+<img class="img-responsive" id="menuimage"  src="img/menuimages/fracmanifoldmenu.png" />
+<div class="yellowblock" id="yellowblockmenu"> </div>
+
+</div>
+
+<div class="overlaymenu col-md-2 col-sm-2 col-xs-2" id="rigmenu">
+	<nav class="navbars">
+	 <ul>
+	 <img  src="img/Homepage_rigs_Text.png" width="120" height="55px"/>
+	   <li>RIG 1</li>
+	   <li>RIG 2</li>
+	   <li>RIG 3</li>
+	   <li>RIG 4</li>
+	   <li>RIG 5</li>
+	   <li>RIG 6</li>
+	   <li>RIG 7</li>
+	   <li>RIG 8</li>
+	   <li>RIG 9</li>
+	   <li>RIG 10</li>
+	   </ul>
+	</nav>
+	</div>
+ </div>  
+</div>
+
+
+
+
+	<div class="title"> 
+		<div class="titlesect pull-left">
+			<h1 id="fleettitle">FRAC FLEET</h1>
+			<a href="selection.html">	<button class="begin" id="fracbtn" type="button"><i>CLICK TO BEGIN</i></button> </a>
+			</div> 
+	</div>	
+
+    <div class="title ">	
+        <div class="titlesect pull-right">		
+			<h1 id="rigtitle">DRILL RIG</h1>
+			<a href="Drillrig.html"><button class="begin" id="rigbtn" type="button"><i>CLICK TO BEGIN</i></button></a>
+		</div>
+									
+	</div>
+					
+					
+	<div class="imgcontainer container-fluid">
+		<div class="bgcontainer row" id="bgcontainer" style="margin-left:0px;">
+			<div class="sections col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left" id="fleetsection"></div> 
+			<div class="sections col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right" id="rigsection"></div> 
+		</div>
+	</div>
+	
+	
+	<div id="midsection">
+		<div class="hero">
+			 <p>With annual sales of<br> 
+				<span>$13 billion</span><br> 
+			in fiscal year <b>2014,<br> 
+			Parker Hannifin</b> is the world’s<br> 
+			leading diversified manufacturer of <br>motion and control technologies,<br> 
+			and systems, providing <br>precision-engineered solutions for a<br> wide variety of mobile, industrial and<br> aerospace markets.
+			</p>
+		</div>
+		<div class="nav">
+			<p>
+			  Navigate through, either, a “typical” <br>
+			<b style="font-family:dinpromedium;">Frac site / Drill Rig equipment layout</b><br>
+			or click on the menu button to go directly to<br>
+			specific equipment.
+			</p>
+		</div>
+	    <div class="footnote">
+			 <hr style="border-width:1px; border-color:#666666; height:1px;"></hr>
+			 <p> This site show cases the oilfield equipment components manufactured by Parker Hannifin.
+				  The equipment have been designed to allow for identification of Parker product locations.  Parker Hannifin does not manufacture oilfield equipment (trucks and rigs). </p>
+	    </div>
+	</div> 
+
+<footer class="footer"></footer>
+
+<script type="text/javascript">	
+			
+			$(document).ready(function(){
+		resizeDiv();
+		});
+
+		window.onresize = function(event) {
+		resizeDiv();
+		}
+
+		function resizeDiv() {
+		vpw = $(window).width();
+		vph = $(window).height();
+		$("#bgcontainer, .sections,#fleetsection:before, #midsection").css({'height': vph + 'px'});
+		}
+	
+</script>	
+<script type="text/javascript">
+
+$(".cd-menu-icon").on("click", function( e ) {
+            e.preventDefault();
+	 $('footer').toggle();
+	 $('#threesixty').toggle();
+	 $('#menuimage').hide();
+	 $('.numplates').toggle();
+	});
+
+$(".cd-menu-text").on("click", function( e ) {
+            e.preventDefault();
+	 $('footer').toggle();
+	 $('#threesixty').toggle();
+	$('#menuimage').hide();
+	$('.numplates').toggle();	
+});
+
+
+</script>
+
+ <script type="text/javascript">
+
+// ================================================================ Menu Image Changing Src============================================================================= //
+
+ $('.cd-menu-icon , .cd-menu-text' ).click(function() {
+  $('#menuimage').hide();
+});
+  
+//------------------------------------------------------------- 1st mouseover ----------------------------------------//
+
+ $( "#truckmenu nav ul a:nth-child(2) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/cementermenu.png");
+});
+
+$( "#truckmenu nav ul a:nth-child(2) li" ).mouseout(function() {
+	$("#menuimage").hide();
+ });
+ 
+  //------------------------------------------------------------- 2nd mouseover ----------------------------------------//
+  
+  $( "#truckmenu nav ul a:nth-child(3) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/blendermenu.png");
+});
+
+$( "#truckmenu nav ul a:nth-child(3) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+
+ });
+
+ //------------------------------------------------------------- 3rd mouseover ----------------------------------------//
+ 
+ $( "#truckmenu nav ul a:nth-child(4) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/coiledtubingmenu.png");
+	
+});
+
+$( "#truckmenu nav ul a:nth-child(4) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+ });
+ 
+ //------------------------------------------------------------- 4th mouseover ----------------------------------------//
+
+ $( "#truckmenu nav ul a:nth-child(5) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/fracmanifoldmenu.png");
+	
+});
+
+$( "#truckmenu nav ul a:nth-child(5) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+
+ });
+ 
+ //------------------------------------------------------------- 5th mouseover ----------------------------------------//
+
+  $( "#truckmenu nav ul a:nth-child(6) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/fractruckmenu.png");
+});
+
+$( "#truckmenu nav ul a:nth-child(6) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+ });
+ 
+  //------------------------------------------------------------- 6th mouseover ----------------------------------------//
+  
+  $( "#truckmenu nav ul a:nth-child(7) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/hydrationtruckmenu.png");
+});
+
+
+$( "#truckmenu nav ul a:nth-child(7) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+ });
+   
+  //------------------------------------------------------------- 7th mouseover ----------------------------------------//
+  
+  $( "#truckmenu nav ul a:nth-child(8) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/sander.png");
+});
+
+
+$( "#truckmenu nav ul a:nth-child(8) li" ).mouseout(function() {
+
+	$("#menuimage").hide();
+ });
+
+  //------------------------------------------------------------- 8th mouseover ----------------------------------------//
+  
+ $( "#truckmenu nav ul a:nth-child(9) li" ).mouseover(function() {
+	$("#truckmenu nav ul a:nth-child(6) li").removeClass('selected');
+	$("#menuimage").show();
+	$("#menuimage").attr("src","img/menuimages/workoverrigmenu.png");
+});
+
+$( "#truckmenu nav ul a:nth-child(9) li" ).mouseout(function() {
+    $("#menuimage").hide();
+ });
+  
+</script>
+ </body>
+</html>

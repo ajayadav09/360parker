@@ -1,0 +1,138 @@
+#galleryContainert {
+  width: 100%;
+  height: 200px;        /* Image height + 200px */
+  overflow: hidden;
+  position: relative;
+  left:0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 1;
+  display:inline-block;
+}
+ 
+/*
+  The gallery div that contains all the images
+ 
+  We'll set the width dynamically in the JavaScript as the images load
+*/
+ 
+#galleryt {
+ width: 100px; 
+  height: 255px;        /* Image height + 100px */
+  padding: 0px 0 0px 0;
+  position: relative;
+    left:30%; 
+  z-index: 1;
+ display:inline-block;
+}
+  
+/*
+  Individual slides within the gallery:
+ 
+  Float them left so that they're all side by side
+  Fixed height (the width will vary as required)
+  Add some horizontal margin between the slides
+  Add a bottom fading reflection for WebKit browsers
+*/
+ 
+#galleryt a img {
+  float: left;
+  height: 97px;
+  margin: 0 50px; 
+  width:428px;  
+  position:relative;
+   top:50px;
+  display: inline-block;
+
+}
+ 
+ 
+ 
+ #galleryt a:first-child img {
+ 
+ height:170px;
+  width:750px;  
+  position: relative;
+top: 0px;
+ left:-2%; 
+ display: inline-block;
+  
+  }
+  
+/* tu keep the trucks in the center */
+ 
+#galleryt a:not(:first-child)  img {
+ left:3%;                 
+}
+
+/*
+  Left and right buttons:
+ 
+  Position them on the left and right sides of the gallery
+  Stretch them to the height of the gallery
+  Hide them by default
+*/
+ 
+#leftButtont, #rightButtont {
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+  margin: auto 0;
+   width:74px; 
+   height:54px;       /* Image height */
+  border: none;
+  outline: none;
+  color: #fff;
+  background: url('../img/navbutton.png');
+  font-size: 100px;
+  opacity: 1;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+ 
+#leftButtont {
+top: 25px;
+left: -26px;
+  background-position:0px 0px;
+  pointer-events:none;
+}
+ 
+#rightButtont {
+background-position:-84px 0px;
+top: 43px;
+left: 25px;
+}
+
+#blackstrip2t{
+position: absolute;
+left: 75%;
+top: 100%;
+}
+ 
+
+/* ====================================================================================================== */
+
+@media all and (max-width: 1500px) {
+#galleryt a:first-child img {
+  height:165px;
+  width:700px;  
+ /* margin-left:70px; */
+  position: relative;
+top: 0px;
+left:-4%;
+    }
+
+ 
+#galleryt a:not(:first-child) img {
+ left:0%;
+}
+}
+
+
+
+
+
